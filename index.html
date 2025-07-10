@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Realmfall: Clash of Empires - Strategic warfare game featuring epic battles and troop customization">
+    <title>REALMFALL: CLASH OF EMPIRES - WarEraStudio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Arial, sans-serif;
+        }
+
+        body {
+            background-color: #0a0a0a;
+            color: #ffffff;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Navigation */
+        nav {
+            background: rgba(10, 10, 10, 0.95);
+            padding: 1rem 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .nav-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: #d4af37;
+            text-decoration: none;
+        }
+
+        /* Hero Section */
+        .hero {
+            height: 100vh;
+            background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+                        url('/Users/wangxufeng/Documents/上线img/WeChatad74043589a2b8927e9a347794050838.jpg');
+            background-size: cover;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            margin-top: 100px;
+        }
+
+        .hero-content h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1.5rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+
+        .hero-content p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            color: #cccccc;
+        }
+
+        /* Features Section */
+        .features {
+            padding: 5rem 0;
+            background: #111111;
+        }
+
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .feature-card {
+            background: #1a1a1a;
+            padding: 2rem;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        /* Races Section */
+        .races {
+            padding: 5rem 0;
+        }
+
+        .race-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .race-card {
+            text-align: center;
+            padding: 1.5rem;
+            background: #1a1a1a;
+            border-radius: 5px;
+        }
+
+        /* Footer */
+        footer {
+            background: #000000;
+            padding: 3rem 0;
+            text-align: center;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 1rem 2rem;
+            background: #d4af37;
+            color: #000;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: transform 0.3s ease;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-3px);
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="container nav-content">
+            <a href="#" class="logo">REALMFALL</a>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="container hero-content">
+            <h1>REALMFALL: CLASH OF EMPIRES</h1>
+            <p>Forge Your Strategy. Conquer the Realm.</p>
+            <p>A continent in turmoil. A war begins in the borderlands...</p>
+            <a href="#" class="cta-button">Join the Battle Now</a>
+        </div>
+    </section>
+
+    <section class="features">
+        <div class="container">
+            <h2>Game Features</h2>
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <i class="fas fa-chess-king fa-3x"></i>
+                    <h3>Strategic Deployment</h3>
+                    <p>Customize your army formations and tactics</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-balance-scale fa-3x"></i>
+                    <h3>Unit Countersystem</h3>
+                    <p>Master the rock-paper-scissors combat mechanics</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-dice-d20 fa-3x"></i>
+                    <h3>Epic Battles</h3>
+                    <p>Massive-scale warfare with thousands of units</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="races">
+        <div class="container">
+            <h2>Warring Factions</h2>
+            <div class="race-grid">
+                <div class="race-card">
+                    <i class="fas fa-shield-alt fa-2x"></i>
+                    <h3>Human Alliance</h3>
+                    <p>Disciplined warriors and siege masters</p>
+                </div>
+                <div class="race-card">
+                    <i class="fas fa-paw fa-2x"></i>
+                    <h3>Orcish Horde</h3>
+                    <p>Brutal strength and overwhelming numbers</p>
+                </div>
+                <div class="race-card">
+                    <i class="fas fa-magic fa-2x"></i>
+                    <h3>Elven Kin</h3>
+                    <p>Ancient magic and precision archery</p>
+                </div>
+                <div class="race-card">
+                    <i class="fas fa-skull fa-2x"></i>
+                    <h3>Undead Legion</h3>
+                    <p>Endless hordes of the restless dead</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>© 2023 WarEraStudio. All rights reserved.</p>
+            <!-- <p>Xiangjiang Road, Xixiang Subdistrict, Bao'an District, Shenzhen, Guangdong, China</p> -->
+            <div style="margin-top: 1rem;">
+                <a href="#" style="color: #d4af37; margin: 0 10px;">Privacy Policy</a>
+                <a href="#" style="color: #d4af37; margin: 0 10px;">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
